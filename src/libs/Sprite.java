@@ -29,6 +29,12 @@ public class Sprite extends ImageView {
         this.ypos = y;
         this.xpos = x;
     }
+                    
+    public void soundEffect(String effectPath) {
+        String path = "src" + effectPath;
+        AudioClip audioClip = new AudioClip(Paths.get(path).toUri().toString());
+        audioClip.play();
+    }
 
     public boolean collide(Sprite sprite) {
         boolean isCollide = false;
