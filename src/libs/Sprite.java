@@ -21,7 +21,7 @@ public class Sprite extends ImageView {
     public void resize(int width, int height) {
         // check first which one is larger between height and width
         Image tmp = new Image(this.imgPath);
-        this.setImage(new Image(this.imgPath, width, height, true, true);
+        this.setImage(new Image(this.imgPath, width, height, false, true);
     }
 
     public void render(GraphicsContext gc, int x, int y) {
