@@ -114,3 +114,9 @@ public class GameCore implements CoreFunc {
 See examples in `core` package in this repository to create the game.
 
 Good luck with your game project in JavaFX
+
+# Some Nice Free Resources
+
+* Sound effects: freesound.org
+* Characters: vecteezy.com
+* Background music (No Copyright Sounds): https://www.youtube.com/user/NoCopyrightSounds
