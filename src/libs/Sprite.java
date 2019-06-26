@@ -18,14 +18,10 @@ public class Sprite extends ImageView {
         this.setImage(new Image(this.imgPath, newdim, newdim, true, false));
     }
 
-    public void resize(int newSize) {
+    public void resize(int width, int height) {
         // check first which one is larger between height and width
         Image tmp = new Image(this.imgPath);
-        int size;
-        if (tmp.getHeight() > tmp.getWidth())
-            this.setImage(new Image(this.imgPath, newSize, 0, true, false));
-        else
-            this.setImage(new Image(this.imgPath, 0, newSize, true, false));
+        this.setImage(new Image(this.imgPath, width, height, true, true);
     }
 
     public void render(GraphicsContext gc, int x, int y) {
