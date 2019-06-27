@@ -20,6 +20,7 @@ public class GameCore implements CoreFunc {
 
     @Override
     public void animate(GraphicsContext gc, int time, ArrayList input) {
+        // any animations and keyboard controls should be here
     }
 
     @Override
