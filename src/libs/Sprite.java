@@ -33,6 +33,12 @@ public class Sprite extends ImageView {
         this.ypos = y;
         this.xpos = x;
     }
+    
+    public void changeImage(String imgPath) {
+        double width = this.getImage().getWidth();
+        double height = this.getImage().getHeight();
+        this.setImage(new Image(imgPath, width, height, true, true));
+    }
                     
     public void soundEffect(String effectPath) {
         String path = "src" + effectPath;
