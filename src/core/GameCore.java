@@ -15,7 +15,7 @@ public class GameCore implements CoreFunc {
 
     @Override
     public void init(GraphicsContext gc) {
-        // initialize objects
+        // initialize objects (initial position, initial size, etc)
     }
 
     @Override
@@ -26,5 +26,10 @@ public class GameCore implements CoreFunc {
     @Override
     public void mouseClick(MouseEvent e) {
         // mouse click event here
+    }
+    
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        // mouse move event here
     }
 }
