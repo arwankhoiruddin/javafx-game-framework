@@ -69,6 +69,15 @@ public class Main extends Application {
                     }
                 }
         );
+        
+        scene.setOnMouseMoved(
+                new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        gameCore.mouseMoved(event);
+                    }
+                }
+        );
 
         GraphicsContext gc = canvas.getGraphicsContext2D();
 
